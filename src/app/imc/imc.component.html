@@ -1,1 +1,45 @@
-<p>imc works!</p>
+<div class="mt-3">
+    <form>
+        <div class="mb-3">
+            <div class="col-auto">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <div class="row">
+                        <select name="sexo" id="sexo" class="form-select">
+                            <option selected>Selecione o Sexo</option>
+                            <option value="marculino">Marculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Idade</h5>
+                        </div>
+                        <div class="col-10">
+                            <input type="number" id="idade" class="form-control" name="idade" [(ngModel)]="idade">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Altura</h5>
+                        </div>
+                        <div class="col-10">
+                            <input type="number" id="altura" class="form-control" name="altura" [(ngModel)]="altura">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Peso</h5>
+                        </div>
+                        <div class="col-10">
+                            <input type="number" id="peso" class="form-control" name="peso" [(ngModel)]="peso">
+                        </div>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="submit" class="btn btn-outline-dark btn-lg" name="calcular" (click)="calcular()">Calcular</button>
+                    </div>
+                    <input type="number" class="form-control" readonly [value]="resup">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
