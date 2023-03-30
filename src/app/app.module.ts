@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     NgbModule,
+    AccordionModule,
     FormsModule
   ],
   providers: [],
